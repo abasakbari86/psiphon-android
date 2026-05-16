@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       clean_build:
-        description: "Clean build (slower but ensures fresh state)"
+        description: 'Clean build (slower but ensures fresh state)'
         type: boolean
         default: true
       tunnel_core_ref:
-        description: "Tunnel-core branch/tag/commit to build AAR from"
+        description: 'Tunnel-core branch/tag/commit to build AAR from'
         type: string
-        default: "psiphon"
+        default: 'psiphon'
 
 permissions:
   contents: write
@@ -30,7 +30,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: "1.24.12"
+          go-version: '1.24.12'
           cache: false
 
       - name: Install Android NDK 23 and platform 30
@@ -42,7 +42,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: "8"
+          java-version: '8'
 
       - name: Set up GOPATH workspace
         run: |
