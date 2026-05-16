@@ -10,7 +10,7 @@ on:
       tunnel_core_ref:
         description: 'Tunnel-core branch/tag/commit to build AAR from'
         type: string
-        default: 'psiphon'
+        default: 'main'
 
 permissions:
   contents: write
