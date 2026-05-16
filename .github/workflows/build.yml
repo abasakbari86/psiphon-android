@@ -23,7 +23,7 @@ jobs:
       - name: Checkout tunnel-core
         uses: actions/checkout@v4
         with:
-          repository: psiphon/psiphon-tunnel-core
+          repository: abasakbari86/psiphon-tunnel-core
           ref: ${{ inputs.tunnel_core_ref }}
           path: psiphon-tunnel-core
 
